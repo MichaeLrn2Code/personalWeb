@@ -1,211 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0564bd" />
+    <meta name="author" content="Wai Wai Chan" />
+    <meta
+      name="keywords"
+      content="Wai Wai Chan, developer, javascript, website, programmer"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F3SK5CL6LE"
+    ></script>
+    <script type="module" src="./js/main.js" def></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0564bd" />
-  <meta name="author" content="Wai Wai Chan" />
-  <meta name="keywords" content="Wai Wai Chan, developer, javascript, website, programmer" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3SK5CL6LE"></script>
-  <script type="module" src="./js/main.js" def></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
+      gtag("config", "G-F3SK5CL6LE");
+    </script>
+    <title>Michael - Computer Programming</title>
+  </head>
 
-    gtag('config', 'G-F3SK5CL6LE')
-  </script>
-  <title>Michael - Computer Programming</title>
-</head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#toggleMobileMenu"
+    data-bs-offset="0"
+    tabindex="0"
+  >
+    <!-- ==== Header ==== -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light py-3" id="header">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img src="./img/mylogo.svg" alt="logo" />
+          </a>
 
-<body data-bs-spy="scroll" data-bs-target="#toggleMobileMenu" data-bs-offset="0" tabindex="0">
-  <!-- ==== Header ==== -->
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light py-3" id="header">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img src="./img/mylogo.svg" alt="logo" />
-        </a>
+          <button id="theme-btn" class="align-self-center ms-auto me-3">
+            <i class="bi bi-moon-fill"></i>
+            <i class="bi bi-brightness-high-fill"></i>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-table="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <button id="theme-btn" class="align-self-center ms-auto me-3">
-          <i class="bi bi-moon-fill"></i>
-          <i class="bi bi-brightness-high-fill"></i>
-        </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
-          aria-controls="toggleMobileMenu" aria-expanded="false" aria-table="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="toggleMobileMenu">
-          <ul class="navbar-nav ms-lg-auto">
-            <li class="nav-item">
-              <a href="#hero" aria-current="page" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <!-- <li class="nav-item">
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a href="#hero" aria-current="page" class="nav-link active"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <!-- <li class="nav-item">
               <a href="#portfolio" class="nav-link">Projects</a>
             </li> -->
-            <li class="nav-item">
-              <a href="./resume.html" class="nav-link">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="./course.html" class="nav-link">Course</a>
-            </li>
-            <!-- <li class="nav-item">
+              <li class="nav-item">
+                <a href="./resume.html" class="nav-link">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a href="./course.html" class="nav-link">Course</a>
+              </li>
+              <!-- <li class="nav-item">
               <a href="https://blog.ahmedzougari.com" target="_blank" class="nav-link">Blog</a>
             </li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- ==== End Header ==== -->
-
-  <div id="root">
-    <!-- ==== Hero ==== -->
-    <div id="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 mt-lg-0 d-grid align-content-center">
-            <section class="text-center text-lg-start" data-aos="zoom-in" data-aos-delay="1000"
-              data-aos-duration="1000">
-              <p>Hello! 👋 My name is</p>
-              <h1>Wai Wai Chan</h1>
-              <p><span id="headline"></span></p>
-              <div class="social-links mx-auto mx-lg-0">
-                <div class="row">
-                  <div class="col-3">
-                    <a href="mailto:michaelwai93.ca@gmail.com" target="_blank">
-                      <i class="bi bi-envelope-fill"></i>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="https://github.com/MichaeLrn2Code" target="_blank">
-                      <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                  <div class="col-3">
-                    <a href="https://www.linkedin.com/in/michaelwc93/" target="_blank">
-                      <i class="bi bi-linkedin"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="col-12 col-lg-6 d-grid align-content-center">
-            <div class="img-container" id="img-wrapper" data-aos="fade-left" data-aos-duration="1500"
-              data-aos-delay="2000">
-              <div id="canvas"></div>
-
-              <div class="curtain">
-                <img src="./img/selfphoto.jpg" crossorigin="" data-sampler="simplePlaneTexture" width="400" height="400"
-                  alt="Ahmed Zougari" />
-              </div>
-            </div>
+            </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- ==== End Hero ==== -->
+      </nav>
+    </header>
+    <!-- ==== End Header ==== -->
 
-    <main>
-      <!-- ==== About ==== -->
-      <div id="about">
+    <div id="root">
+      <!-- ==== Hero ==== -->
+      <div id="hero">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6 d-grid align-content-center">
-              <section id="about_section" class="my-5 my-lg-0" data-aos="fade-right" data-aos-mirror="true"
-                data-aos-duration="1500">
-                <h1>ABOUT ME</h1>
-                <p>
-                  I have 4 years of experience in the insurance industry as an IT business analyst, and currently
-                  studying Computer Programming at Algonquin College, looking for a opportunity to make
-                  transition
-                  into a junior developer or programmer role.
-                </p>
-                <p>
-                  Dedicated and reliable professional with a customer-focused approach and strong skills in programming
-                  and project management. Consistently exceeding customer expectations by providing timely solutions and
-                  exceptional service quality. A flexible and approachable team player with excellent problem-solving
-                  skills used to handle tight project timelines and implement new ideas.
-                </p>
+            <div class="col-12 col-lg-6 mt-lg-0 d-grid align-content-center">
+              <section
+                class="text-center text-lg-start"
+                data-aos="zoom-in"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+              >
+                <p>Hello! 👋 My name is</p>
+                <h1>Wai Wai Chan</h1>
+                <p><span id="headline"></span></p>
+                <div class="social-links mx-auto mx-lg-0">
+                  <div class="row">
+                    <div class="col-3">
+                      <a
+                        href="mailto:michaelwai93.ca@gmail.com"
+                        target="_blank"
+                      >
+                        <i class="bi bi-envelope-fill"></i>
+                      </a>
+                    </div>
+                    <div class="col-3">
+                      <a
+                        href="https://github.com/MichaeLrn2Code"
+                        target="_blank"
+                      >
+                        <i class="bi bi-github"></i>
+                      </a>
+                    </div>
+                    <div class="col-3">
+                      <a
+                        href="https://www.linkedin.com/in/michaelwc93/"
+                        target="_blank"
+                      >
+                        <i class="bi bi-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </section>
             </div>
             <div class="col-12 col-lg-6 d-grid align-content-center">
-              <section id="skills_section" class="mb-5 mb-lg-0" data-aos="fade-left" data-aos-duration="1000">
-                <h1>SKILLS</h1>
-                <div class="row">
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/html.svg" alt="html" />
-                    <span>HTML</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/css.svg" alt="css" />
-                    <span>CSS</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/java.svg" alt="java" />
-                    <span>JAVA</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/bootstrap.svg" alt="bootstrap" />
-                    <span>Bootstrap</span>
-                  </div>
-                  <!-- <div class="col-6 col-md-4">
+              <div
+                class="img-container"
+                id="img-wrapper"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                data-aos-delay="2000"
+              >
+                <div id="canvas"></div>
+
+                <div class="curtain">
+                  <img
+                    src="./img/selfphoto.jpg"
+                    crossorigin=""
+                    data-sampler="simplePlaneTexture"
+                    width="400"
+                    height="400"
+                    alt="curtain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ==== End Hero ==== -->
+
+      <main>
+        <!-- ==== About ==== -->
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6 d-grid align-content-center">
+                <section
+                  id="about_section"
+                  class="my-5 my-lg-0"
+                  data-aos="fade-right"
+                  data-aos-mirror="true"
+                  data-aos-duration="1500"
+                >
+                  <h1>ABOUT ME</h1>
+                  <p>
+                    I have 4 years of experience in the insurance industry as an
+                    IT business analyst, and currently studying Computer
+                    Programming at Algonquin College, looking for a opportunity
+                    to make transition into a junior developer or programmer
+                    role.
+                  </p>
+                  <p>
+                    Dedicated and reliable professional with a customer-focused
+                    approach and strong skills in programming and project
+                    management. Consistently exceeding customer expectations by
+                    providing timely solutions and exceptional service quality.
+                    A flexible and approachable team player with excellent
+                    problem-solving skills used to handle tight project
+                    timelines and implement new ideas.
+                  </p>
+                </section>
+              </div>
+              <div class="col-12 col-lg-6 d-grid align-content-center">
+                <section
+                  id="skills_section"
+                  class="mb-5 mb-lg-0"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <h1>SKILLS</h1>
+                  <div class="row">
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/html.svg" alt="html" />
+                      <span>HTML</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/css.svg" alt="css" />
+                      <span>CSS</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/java.svg" alt="java" />
+                      <span>JAVA</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img
+                        src="./img/stack-icons/bootstrap.svg"
+                        alt="bootstrap"
+                      />
+                      <span>Bootstrap</span>
+                    </div>
+                    <!-- <div class="col-6 col-md-4">
                     <img src="./img/stack-icons/tailwind.svg" alt="tailwind css" />
                     <span>Tailwind</span>
                   </div> -->
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/javascript.svg" alt="javascript" />
-                    <span>JavaScript</span>
+                    <div class="col-6 col-md-4">
+                      <img
+                        src="./img/stack-icons/javascript.svg"
+                        alt="javascript"
+                      />
+                      <span>JavaScript</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img
+                        src="./img/stack-icons/netbeans.svg"
+                        alt="netbeans"
+                      />
+                      <span>Netbeans</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/mysql.svg" alt="MySQL" />
+                      <span>MySQL</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img
+                        src="./img/stack-icons/postgresql.svg"
+                        alt="PostgreSQL"
+                      />
+                      <span>PostgreSQL</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/php.svg" alt="php" />
+                      <span>PHP</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/git.svg" alt="git/github" />
+                      <span>Git / GitHub</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/linux.svg" alt="Lunix" />
+                      <span>Linux</span>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <img src="./img/stack-icons/python.svg" alt="Python" />
+                      <span>Python</span>
+                    </div>
                   </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/netbeans.svg" alt="netbeans" />
-                    <span>Netbeans</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/mysql.svg" alt="MySQL" />
-                    <span>MySQL</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/postgresql.svg" alt="PostgreSQL" />
-                    <span>PostgreSQL</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/php.svg" alt="php" />
-                    <span>PHP</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/git.svg" alt="git/github" />
-                    <span>Git / GitHub</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/linux.svg" alt="Lunix" />
-                    <span>Linux</span>
-                  </div>
-                  <div class="col-6 col-md-4">
-                    <img src="./img/stack-icons/python.svg" alt="Python" />
-                    <span>Python</span>
-                  </div>
-                </div>
-              </section>
+                </section>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- ==== end About ==== -->
+        <!-- ==== end About ==== -->
 
-
-      <!-- ==== Portfolio === -->
-      <!-- <section id="portfolio" class="">
+        <!-- ==== Portfolio === -->
+        <!-- <section id="portfolio" class="">
         <div class="container">
           <h1 class="mb-md-5">PROJECTS</h1>
           <div class="row row-cols-1 row-cols-lg-2 g-3">
@@ -349,10 +417,10 @@
           </p>
         </div>
       </section> -->
-      <!-- ==== End Portfolio === -->
+        <!-- ==== End Portfolio === -->
 
-      <!-- === Contact ====  -->
-      <!-- <div id="contact">
+        <!-- === Contact ====  -->
+        <!-- <div id="contact">
         <section>
           <div class="container">
             <h1>CONTACT ME</h1>
@@ -438,33 +506,33 @@
           </div>
         </section>
       </div> -->
-      <!-- ==== End Contact ====  -->
-    </main>
+        <!-- ==== End Contact ====  -->
+      </main>
 
-    <!-- ==== Start footer ====  -->
-    <footer id="footer">
-      <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2">
-          <div>
-            By&nbsp;<span class="author"> Wai Wai Chan, Michael</span>
-          </div>
+      <!-- ==== Start footer ====  -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div>
+              By&nbsp;<span class="author"> Wai Wai Chan, Michael</span>
+            </div>
 
-          <div class="text-center text-lg-end">
-            <a href="https://github.com/MichaeLrn2Code" target="_blank">
-              <i class="bi bi-github"></i>
-            </a>
+            <div class="text-center text-lg-end">
+              <a href="https://github.com/MichaeLrn2Code" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
 
-            <a href="https://www.linkedin.com/in/michaelwc93/" target="_blank">
-              <i class="bi bi-linkedin"></i>
-            </a>
+              <a
+                href="https://www.linkedin.com/in/michaelwc93/"
+                target="_blank"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- ==== End footer ====  -->
-  </div>
-
-
-</body>
-
+      </footer>
+      <!-- ==== End footer ====  -->
+    </div>
+  </body>
 </html>
