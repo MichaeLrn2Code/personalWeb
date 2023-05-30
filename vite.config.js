@@ -1,8 +1,8 @@
-const path = require("path");
-import minify from "vite-plugin-minify";
+const path = require('path')
+import minify from 'vite-plugin-minify'
 
 module.exports = {
-  root: "src",
+  root: 'src',
 
   plugins: [
     minify({
@@ -11,12 +11,12 @@ module.exports = {
   ],
 
   build: {
-    outDir: "../dist",
+    outDir: '../dist',
   },
 
   resolve: {
     alias: {
-      "@": path.join(__dirname, "src"),
+      '@': path.join(__dirname, 'src'),
     },
   },
-};
+}

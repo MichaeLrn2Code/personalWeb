@@ -2,13 +2,6 @@
   background-color: var(--bs-secondary);
   padding: 2.5rem 0;
 
-  .container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  }
-
   .row {
     div:first-child {
       color: var(--bs-primary);
