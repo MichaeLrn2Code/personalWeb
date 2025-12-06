@@ -13,7 +13,7 @@
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "braces": "^3.0.3",
-    "vite": "^5.4.21"
+    "vite": "^7.2.6"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
